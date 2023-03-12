@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("assets/background.jpg") no-repeat fixed center;
+  background-size: 140vh;
+}
+
+.form-div {
+  height: fit-content;
+  width: 80%;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: invert();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2rem;
+  border: 5px solid yellow;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.form-div > .pic1 {
+  position: absolute;
+  top: -50px;
+  right: -45px;
+  height: 40%;
+  width: auto;
+  filter: drop-shadow(5px 5px 20px black);
+}
+
+.form-div h1 {
+  color: rgb(231, 231, 0);
+  font-size: 50px;
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-div table {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.form-div table td {
+  padding: 10px 40px;
+  position: relative;
+}
+
+.form-div input {
+  height: 50px;
+  width: 100%;
+  padding-left: 15px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.form-div input:focus {
+  border: 3px solid #bd572f;
+  outline: transparent;
+}
+
+.form-div button {
+  color: white;
+  background-color: #bd572f;
+  padding: 15px 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 0.35rem;
+  float: right;
+  cursor: pointer;
+}
+
+.alertImg {
+  position: absolute;
+  height: 95px;
+  right: 10px;
+  top: -10px;
+  display: none;
+}
+
+.form-div > .pic2 {
+  position: absolute;
+  bottom: -20px;
+  left: -70px;
+  height: 30%;
+  width: auto;
+  filter: drop-shadow(5px 5px 40px black);
+}
+
+.form-div h2 {
+  color: rgb(231, 231, 0);
+  font-size: 40px;
+  text-align: center;
+  margin: 150px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
