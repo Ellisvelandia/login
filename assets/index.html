@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    
+    <div class="form-div">
+
+        <img src="ppic1.png" alt="" class="pic1">
+
+        <form action="submitted.html" name="suForm">
+
+            <table>
+                <tr>
+                    <td>
+                        <h1>Sign In</h1>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Your email" id="inputEmail">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Password" id="inputPassword">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button id="submitBtn" onmouseover="btnFunction()">Log In</button>
+                        <img src="alert.gif" alt="" class="alertImg" id="alertImg" onmouseleave="hideAlert()">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+
+        <img src="ppic2.png" alt="" class="pic2">
+
+
+    </div>
+
+
+
+    <script>
+
+        function btnFunction(){
+
+            const email = document.forms['suForm']['inputEmail'].value;
+            const password = document.forms['suForm']['inputPassword'].value;
+
+
+            const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+            if(!email.match(emailPattern) || password.length < 8){
+                document.getElementById('alertImg').style.display = "block";
+            } else {
+                document.getElementById('submitBtn').type = "submit";
+            }
+
+        };
+
+
+
+
+        function hideAlert(){
+            document.getElementById('alertImg').style.display = "none";
+        };
+
+
+    </script>
+
+
+
+    <!-- Made with "🖤" by Code Fed -->
+
+
+
+</body>
+</html>
